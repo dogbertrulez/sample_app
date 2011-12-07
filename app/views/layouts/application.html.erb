@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sample App | <%= @title %></title>
+  <title><%= title %>></title>
   <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag "blueprint/screen", :media => "blueprint/screen" %>
+  <%= stylesheet_link_tag "blueprint/print",  :media => "blueprint/print" %>
   <%= javascript_include_tag "application" %>
+  
   <%= csrf_meta_tags %>
 </head>
 <body>
