@@ -8,6 +8,7 @@ SampleApp::Application.routes.draw do
   get "pages/map"
   
   get "pages/help"
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

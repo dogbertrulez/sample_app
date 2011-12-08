@@ -1,3 +1,160 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  width: 70em;
+}
+
+body {
+  background: url(/assets/NSTexturedFullScreenBackgroundColor.png);
+  /* background: #cff; */
+  /*
+  background-color: #000000;
+  background-image: -webkit-gradient(linear, left center, right center, from(#000000),to(#d6d6d6));
+  background-image: -webkit-linear-gradient(left, #000000, #d6d6d6);
+  background-image: -moz-linear-gradient(left, #000000, #d6d6d6);
+  background-image: -o-linear-gradient(left, #000000, #d6d6d6);
+  background-image: -ms-linear-gradient(left, #000000, #d6d6d6);
+  background-image: linear-gradient(left, #000000, #d6d6d6);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,StartColorStr='#000000', EndColorStr='#d6d6d6');
+  */
+  /* Black to which gradient 
+  background-color: #000000;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#000000),to(#797979));
+  background-image: -webkit-linear-gradient(top, #000000, #797979);
+  background-image: -moz-linear-gradient(top, #000000, #797979);
+  background-image: -o-linear-gradient(top, #000000, #797979);
+  background-image: -ms-linear-gradient(top, #000000, #797979);
+  background-image: linear-gradient(top, #000000, #797979);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#000000', EndColorStr='#797979');
+*/}
+
+/* Header */
+header {
+  padding-top: 2%;
+  margin-bottom: 2%;
+}
+
+header nav {
+  float: right;
+  font-size: 120%;
+}
+
+header img {
+  padding: 2%;
+  background: #fff;
+  
+  /*background-color: #000000;*/
+/*  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.65)),to(rgba(0, 0, 0, 0.85)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.65));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.65));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85));
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#000000', EndColorStr='#000000');  
+  */  
+  
+}
+
+section {
+  margin-top: 1em;
+  font-size: 120%;
+  padding: 20px;
+  background: #fff;
+}
+
+section h1 {
+  font-size: 200%;
+}
+
+
+/* footer */
+footer {
+  text-align: center; 
+  margin-top: 3%; 
+  width: 100%; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+footer nav { 
+  float: none;
+}
+
+
+/* links */
+
+a {
+  color: #FF8E00;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0A67A3;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #0A67A3;
+}
+
+/* Navigation */
+nav {
+  float: right;
+  background-color: white; 
+  padding: 0 0.7em; 
+  white-space: nowrap;
+}
+
+nav ul { 
+  margin: 0; 
+  padding: 0;
+}
+
+nav ul li { 
+  list-style-type: none; 
+  display: inline-block; 
+  padding: 0.2em 0;
+}
+
+nav ul li a { 
+  padding: 0 .5em; 
+  font-weight: bold;
+}
+
+nav ul li a:visited { 
+  color: black;
+}
+
+nav ul li a:hover { 
+  text-decoration: underline;
+}
+
+/* Sign up button */
+a.signup_button { 
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block; 
+  text-align: center; 
+  width:  40%; 
+  color: #0A67A3; 
+  background: #FF8E00; 
+  font-size: 200%; 
+  font-weight: normal; 
+  padding: 3%;
+  text-decoration: none;
+}
+
+a.signup_button:hover {
+  font-weight: normal;
+  text-shadow: none;
+  text-shadow: 0 0 0.1em #fff, 0 0 0.1em #000;
+}
+
+/* Round corners */
+.round {
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  border-style: groove;
+}
