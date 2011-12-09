@@ -12,7 +12,7 @@ class PagesController < ApplicationController
   end
   
   def map
-    @title = "Map"
+    @title = "Site Map"
   end
   
   def help

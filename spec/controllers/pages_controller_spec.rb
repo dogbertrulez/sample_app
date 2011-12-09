@@ -32,7 +32,7 @@ describe PagesController do
     it "returns http success" do
       get 'map'
       response.should be_success
-      response.should have_selector("title", :content => @@base_title+"Map")
+      response.should have_selector("title", :content => @@base_title+"Site Map")
     end
   end
   
