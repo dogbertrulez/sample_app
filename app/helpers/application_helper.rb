@@ -10,7 +10,7 @@ module ApplicationHelper
   
   def logo
 #    logo_html = "<object type='image/svg+xml' data='/assets/3L.svg'>"
-    logo_html = image_tag( "3L.svg", {:alt => "Sample App", :class => "round"} )
+    logo_html = image_tag( "logo.png", {:alt => "Sample App", :class => "round"} )
 #    logo_html += "</object>"
     return logo_html.html_safe
   end
