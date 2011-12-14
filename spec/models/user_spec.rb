@@ -61,4 +61,17 @@ describe User do
     end
   end
   
+  describe "password encryption" do
+    before(:each) do
+      @user = User.create!(@attr_valid);
+    end
+    
+    it "should have an encrypted password attribute" do
+      @user.should respond_to(:encrypted_password)
+    end
+    
+    it "should be false if the passwords dont match" do
+      @user.has_password?("invalid").should be_false
+    end
+  end
 end
