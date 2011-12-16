@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'digest'
 
 describe User do
   before(:each) do
