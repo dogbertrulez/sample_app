@@ -51,8 +51,15 @@ class User < ActiveRecord::Base
    
     # Return true if the user's password matches the submitted password.
     def has_password?(submitted_password)
+      # Compare encrypted_password with the encrypted version of # submitted_password.
       encrypt(submitted_password) == encrypted_password
-    # Compare encrypted_password with the encrypted version of # submitted_password.
+    end
+    
+    def User.authenticate(submitted_email, submitted_password)
+      submitted_user = User.find_by_email(submitted_email)
+      return nil if submitted_user.nil?
+      return nil if not submitted_user.has_password?(submitted_password)
+      return submitted_user
     end
 
 end
