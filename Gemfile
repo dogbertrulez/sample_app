@@ -6,7 +6,7 @@ gem 'rails'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'gravatar_image_tag'
 gem 'json'
 
 # Gems used only for assets and not required

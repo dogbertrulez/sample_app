@@ -8,6 +8,7 @@ class User < ActiveRecord::Base
     #NOTE: class EmailFormatValidator is invoked when the validates method is called
     include ActiveModel::Validations
     class EmailFormatValidator < ActiveModel::EachValidator
+      #noinspection RubyClassVariableUsageInspection
       @@email_regex =  /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
       def validate_each(record, attribute, value)
         record.errors[attribute] << (options[:message] || "is not an email") unless

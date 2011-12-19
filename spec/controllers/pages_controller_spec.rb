@@ -3,6 +3,7 @@ require 'spec_helper'
 describe PagesController do
   render_views
 
+  #noinspection RubyClassVariableUsageInspection,RubyClassVariableUsageInspection
   @@base_title = "Sample App | ";
   describe "GET 'home'" do
     it "returns http success" do
